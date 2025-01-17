@@ -3,7 +3,6 @@ require('dotenv').config();
 const express = require('express');
 const mysql = require('mysql2');
 const app = express();
-const port = 3000;
 const cors = require('cors');
 
 app.use(express.json());
@@ -11,12 +10,9 @@ app.use(cors())
 //Lembra de instalar o cors com npm install cors e dar o app.use(cors());
 //é um tipo de política muito 
 
+const port = process.env.PORT || 3000;
 
-app.use(cors({
-  origin: 'https://frontend-pf-2.vercel.app',  // URL do seu front-end hospedado na Vercel
-  methods: ['GET', 'POST', 'PUT', 'DELETE'],
-  allowedHeaders: ['Content-Type', 'Authorization'],
-}));
+
 
 //conexão com banco de dados
 
