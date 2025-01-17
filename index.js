@@ -10,11 +10,11 @@ app.use(cors())
 //é um tipo de política muito 
 
 
-// Habilita o CORS para o seu front-end específico
 app.use(cors({
-  origin: 'https://frontend-pf-2.vercel.app/'  // URL da sua aplicação na Vercel
+  origin: 'https://frontend-pf-2.vercel.app',  // URL do seu front-end hospedado na Vercel
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  allowedHeaders: ['Content-Type', 'Authorization'],
 }));
-
 
 //conexão com banco de dados
 
