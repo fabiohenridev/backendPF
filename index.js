@@ -18,7 +18,7 @@ const port = process.env.PORT || 9001;
 
 const connection  = mysql.createConnection({
 
-host: 'localhost',
+host: 'https://backend-pf-d6v3.vercel.app/user',
 user: 'root',
 password: '5tlmjt0f2C@',
 database: 'crud_db'
