@@ -10,7 +10,7 @@ app.use(cors())
 //Lembra de instalar o cors com npm install cors e dar o app.use(cors());
 //é um tipo de política muito 
 
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 9001;
 
 
 
